@@ -1,0 +1,94 @@
+<doc xmlns="https://hyperview.org/hyperview">
+  <screen>
+    <body style="Body" safe-area="true">
+      <view scroll="true" style="page">
+        <header
+        xmlns="https://hyperview.org/hyperview">
+        <view style="header">
+          <view style="header-icon-area" id='header-back-icon'>
+            <image id="atBackIcon" style="header-icon" source="https://wealth-app-dev.prudentialcorporation-asia.com/wealth-static/wealth-pictures/back.png"/>
+            <behavior action="back" href="#"/>
+            <behavior action="redux-action" action-type="HV/HEADER" action-payload='{"hvKey":"Pru-Modal-Close-Uri","action":"REMOVE"}' />
+            <behavior action="dispatch-event" event-name="budget-reload" trigger="press"/>
+          </view>
+          <!-- other-elements -->
+          <view style="header-section-center">
+						<text style="16-med header-title" numberOfLines="1">Page 2</text> 
+					</view>
+        </view>
+      </header>
+       
+        <text style="Header__Title">this is page 2</text>
+        <!-- <view action="new" href="/navigation/modal.xml" style="Button">
+          <text style="Button__Label">Open another modal</text>
+        </view> -->
+        <view action="push" href="/navigation/custom-back/step3.xml" style="Button">
+          <text style="Button__Label">goto page 3</text>
+        </view>
+      </view>
+    </body>
+    <styles>
+      <style
+        id="header"
+        alignItems="center"
+        backgroundColor="white"
+        borderBottomColor="#ccc"
+        borderBottomWidth="1"
+        flexDirection="row"
+        paddingLeft="24"
+        paddingRight="24"
+        paddingBottom="16"
+
+      />
+      <style
+        id="Header__Back"
+        color="blue"
+        fontSize="16"
+        fontWeight="600"
+        paddingRight="16"
+      />
+      <style id="Header__Title" color="black" fontSize="24" fontWeight="600" />
+      <style id="Body" backgroundColor="white" flex="1" />
+      <style id="page" paddingLeft="20" paddingRight="20"/>
+      <style
+        id="Description"
+        fontSize="16"
+        fontWeight="normal"
+        margin="24"
+        marginBottom="0"
+      />
+      <style
+        id="Item"
+        alignItems="center"
+        borderBottomColor="#eee"
+        borderBottomWidth="1"
+        flex="1"
+        flexDirection="row"
+        height="48"
+        justifyContent="space-between"
+        paddingLeft="24"
+        paddingRight="24"
+      />
+      <style id="Item__Label" fontSize="18" fontWeight="normal" />
+      <style id="Item__Chevron" fontSize="18" fontWeight="bold" />
+      <style
+        id="Button"
+        backgroundColor="#63CB76"
+        borderRadius="16"
+        flex="1"
+        flexDirection="row"
+        justifyContent="center"
+        margin="24"
+        padding="24"
+      />
+      <style id="Button__Label" color="white" fontSize="24" fontWeight="bold" />
+      <style id="header" flexDirection="row" backgroundColor="#FFFFFF" justifyContent="space-between" alignItems="center" />
+      <style id="bottom-border" borderBottomWidth="1" borderBottomColor="#E8E9EB"/>
+      <style id="header-section-center" flex="1" />
+      <style id="header-icon-area" paddingVertical="12" />
+      <style id="header-icon" width="24" height="24" />
+      <style id="header-logo" width="106" height="21" />
+      <style id="header-title" paddingVertical="14" textAlign="center"  fontSize="20"/>
+    </styles>
+  </screen>
+</doc>

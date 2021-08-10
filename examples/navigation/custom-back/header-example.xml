@@ -1,0 +1,36 @@
+<body>
+	<header
+		xmlns="https://hyperview.org/hyperview">
+		<view style="header">
+			<view style="header-icon-area" id='header-back-icon'>
+				<image id="atBackIcon" style="header-icon" source="https://wealth-app-dev.prudentialcorporation-asia.com/wealth-static/wealth-pictures/back.png"/>
+				<behavior delay="300" action="navigate" href="https://wealth-app-dev.prudentialcorporation-asia.com/xml/v3/wealth/landingpage"/>
+				<behavior action="dispatch-event" event-name="budget-reload" trigger="press"/>
+			</view>
+			<!-- other-elements -->
+		</view>
+	</header>
+
+	<header
+		xmlns="https://hyperview.org/hyperview">
+		<view style="header">
+			<view style="header-icon-area" id='header-back-icon'>
+				<image id="atBackIcon" style="header-icon" source="https://wealth-app-dev.prudentialcorporation-asia.com/wealth-static/wealth-pictures/back.png"/>
+				<behavior action="dispatch-event" event-name="updated-goal-list" trigger="press" once="true"/>
+				<behavior delay="100" action="navigate" href="https://wealth-app-dev.prudentialcorporation-asia.com/xml/v3/wealth/landingpage"/>
+			</view>
+			<!-- other-elements -->
+		</view>
+	</header>
+
+	<header style="bottom-border"
+		xmlns="https://hyperview.org/hyperview">
+		<view style="header">
+			<view style="header-icon-area" id='header-back-icon'>
+				<image id="atBackIcon" style="header-icon" source="https://wealth-app-dev.prudentialcorporation-asia.com/wealth-static/wealth-pictures/back.png"/>
+				<behavior action="redux-action" action-type="HV/HEADER" action-payload='{"hvKey":"Pru-Modal-Close-Uri","action":"REMOVE"}' />
+				<behavior delay="300" action="back" href="#"/>
+			</view>
+			<!-- other-elements -->
+		</header>
+	</body>
